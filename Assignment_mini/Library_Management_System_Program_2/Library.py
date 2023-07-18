@@ -1,7 +1,7 @@
 from datetime import datetime, timedelta
 
-from Assignment_mini.Program_2.Book import Book
-from Assignment_mini.Program_2.Student import Student
+from Assignment_mini.Library_Management_System_Program_2.Book import Book
+from Assignment_mini.Library_Management_System_Program_2.Student import Student
 
 
 class Library:
@@ -9,31 +9,38 @@ class Library:
     def __init__(self):
         self.books = []
 
+    # create Add a new book method.
     def add_book(self, book):
         self.books.append(book)
 
+    # create Remove a book method.
     def remove_book(self, book):
         if book in self.books:
             self.books.remove(book)
 
+    # create display all books method
     def display_all_books(self):
         for book in self.books:
             print(book)
 
+    # create display available books method
     def display_available_books(self):
         for book in self.books:
             if book.is_available():
                 print(book)
 
+    # create display overdue books method
     def display_overdue_books(self):
         today = datetime.now()
         for book in self.books:
             if not book.is_available() and today > book2.due_date:
                 print(book)
 
+    # create borrowed book method
     def borrow_book(self, student, book):
         return student.borrow_book(book)
 
+    # create return book method
     def return_book(self, student, book):
         return student.return_book(book)
 

@@ -1,4 +1,7 @@
 # create RegisterNewUser class
+import openpyxl
+
+
 class RegisterNewUser():
     # Employee records dictionary to store employee details
     employee_records = {}
@@ -27,6 +30,7 @@ class RegisterNewUser():
 
             if password == confirm_password:
                 print("Registration successful")
+                RegisterNewUser().register(user_name,password)
                 break
             else:
                 print("Registration unsuccessful")
@@ -58,4 +62,52 @@ class RegisterNewUser():
                     any(char in "@#$&*!" for char in password):
                 return True
         return False
+
+    def register(self, username: str, passcode: str):
+        # Get user information
+        print("Kindly provide more info to finish the registration:")
+        self.name = input("Name      :>")
+        self.email = input("password     :>")
+
+
+        # Check if the Excel file exists or create a new one
+        try:
+            workbook = openpyxl.load_workbook('user_credentials.xlsx')
+        except FileNotFoundError:
+            workbook = openpyxl.Workbook()
+
+        # Select the active worksheet (first sheet by default)
+        worksheet = workbook.active
+
+        # Append data to the worksheet
+        l = [username, passcode]
+        worksheet.append(l)
+
+        # Save the workbook
+        workbook.save('user_credentials.xlsx')
+
+        print("Hi", self.name, ", your account has been registered successfully!!!")
+
+    def readUserData(self, username: str, datatype: str):
+        try:
+            workbook = openpyxl.load_workbook('user_credentials.xlsx')
+            worksheet = workbook.active
+
+            for row in worksheet.iter_rows(min_row=1, values_only=True):
+                if username == row[0]:
+                    if datatype.upper().__contains__("NAME"):
+                        return row[2]
+                    elif datatype.upper().__contains__("PASSWORD"):
+                        return row[3]
+                    # elif datatype.upper().__contains__("PHONE"):
+                    #     return row[4]
+                    # elif datatype.upper().__contains__("AGE"):
+                    #     return row[5]
+
+        except FileNotFoundError:
+            print("Database file not found.")
+            return None
+
+        print("User not found in the database.")
+        return None
 

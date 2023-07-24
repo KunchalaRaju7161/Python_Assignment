@@ -1,5 +1,5 @@
 # create WelcomePage class
-from Python_Main_Assignment.LoginPage import LoginPage
+from Python_Main_Assignment.LoginPage import LoginScreen
 from Python_Main_Assignment.RegisterNewUser import RegisterNewUser
 
 
@@ -19,7 +19,7 @@ class WelcomePage():
     def user_selection(self, option):
         try:
             if option == "1":
-                LoginPage()
+                LoginScreen().run_login()
             elif option == "2":
                 RegisterNewUser().register_screen()
             elif option =="3":

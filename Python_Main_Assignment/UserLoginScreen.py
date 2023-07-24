@@ -1,4 +1,5 @@
 # create WelcomePage class
+from Python_Main_Assignment.Userdata import Userdata
 
 
 class UserLoginScreen():
@@ -19,9 +20,7 @@ class UserLoginScreen():
     def user_selection(self, option):
         try:
             if option == "1":
-
-                # LoginScreen().run_login()
-                print("hi")
+                Userdata().added_User_Data()
             elif option == "2":
                 print("hi1")
             elif option == "3":

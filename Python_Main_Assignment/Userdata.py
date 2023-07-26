@@ -5,8 +5,11 @@ from openpyxl import Workbook, load_workbook
 
 
 class Userdata():
-    wb = openpyxl.load_workbook('employee_data.xlsx')
+    file_path = "/Users/rkunchala/pythonAssignments/Python_Assignments/Python_Main_Assignment/employee_data.xlsx"
+    wb = openpyxl.load_workbook(file_path)
     ws = wb.active
+    # Get the total number of rows and columns in the sheet
+    rowCount = ws.max_row
 
     def validate_user_id(self, user_id, employee_data):
         if user_id in employee_data:
@@ -153,12 +156,20 @@ class Userdata():
                 print("Invalid choice. Try again.")
 
     def display_employee_data(self):
-        emp = []
-        max_col = self.ws.max_column
-        for i in range(2, max_col + 1):
-            cell_obj = self.ws.cell(row=1, column=i)
-            emp.append(cell_obj.value)
-            print(emp)
+        for current_row in range(1, self.rowCount + 1):
+            user_ID = self.ws.cell(row=current_row, column=1).value
+            employee_id = self.ws.cell(row=current_row, column=2).value
+
+            name = self.ws.cell(row=current_row, column=3).value
+            age = self.ws.cell(row=current_row, column=4).value
+            company_name = self.ws.cell(row=current_row, column=5).value
+            designation = self.ws.cell(row=current_row, column=6).value
+            salary = self.ws.cell(row=current_row, column=7).value
+            address = self.ws.cell(row=current_row, column=8).value
+            phone_number = self.ws.cell(row=current_row, column=9).value
+            password = self.ws.cell(row=current_row, column=10).value
+
+            print(user_ID, employee_id, name, age, company_name, designation, salary, address, phone_number, password)
 
     def display_employee_data1(self):
         emp = []
@@ -216,3 +227,20 @@ class Userdata():
     # row_index = 2  # Assuming you want to delete rows based on values in the first column
     # value_to_delete = "ValueToDelete"
     # delete_rows_by_value(sheet_name, row_index, value_to_delete)
+    def delete_data(self):
+        # Get the last row and column numbers
+        last_row = self.ws.max_row
+        last_col = self.ws.max_column
+
+        # Delete all rows
+        for row in range(last_row, 0, -1):
+            self.ws.delete_rows(row)
+
+        # Delete all columns
+        for col in range(last_col, 0, -1):
+            self.ws.delete_cols(col)
+
+        # Save the changes to the Excel file
+        self.wb.save(self.file_path)
+
+

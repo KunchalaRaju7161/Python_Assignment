@@ -25,7 +25,8 @@ class UserLoginScreen():
             if option == "1":
                 Userdata().added_User_Data()
             elif option == "2":
-                Userdata().display_employee_data1()
+                # Userdata().display_employee_data1()
+                Userdata().display_employee_data()
             elif option == "3":
                 Update_emp_data().update_employee_data(employee_data={
                     "User-ID" : "Hr-1",
@@ -39,8 +40,7 @@ class UserLoginScreen():
                     "Phone Number": 9008765682
                 }, user_id="Hr-1")
             elif option == "4":
-                print("hi")
-                # Userdata().delete_rows_by_value("Sheet1",2, "ValueToDelete")
+                Userdata().delete_data()
             elif option == "5":
                 exit()
 

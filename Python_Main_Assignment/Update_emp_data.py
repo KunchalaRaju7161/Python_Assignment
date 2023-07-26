@@ -43,20 +43,3 @@ class Update_emp_data():
             print("User-ID not found in the employee_data.")
 
 
-if __name__ == "__main__":
-    emp_data = {
-        "Hr-1": {
-            "Employee Id": "Em-1",
-            "Name": "John",
-            "Age": 34,
-            "Company-Name": "Sony",
-            "Designation": "SDET",
-            "Salary": 50000,
-            "Address": "ABC Street 713457",
-            "Phone Number": 9008765682
-        }
-    }
-
-    user_id = input("Please enter the User-ID of the record you want to update: ")
-    emp_updater = Update_emp_data()
-    emp_updater.update_employee_data(emp_data, user_id)

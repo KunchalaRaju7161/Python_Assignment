@@ -5,43 +5,40 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 import time
 
+chrome_options = webdriver.ChromeOptions()
+chrome_options.add_argument("--incognito")
+driver = webdriver.Chrome(options=chrome_options)
 
-# chrome_options = webdriver.ChromeOptions()
-# chrome_options.add_argument("--incognito")
-# driver = webdriver.Chrome(options=chrome_options)
-
-driver = webdriver.Chrome()
-
+# driver = webdriver.Firefox()
+driver.implicitly_wait(5)
 driver.maximize_window()
-wait = WebDriverWait(driver, 25, poll_frequency=1, ignored_exceptions=[NoSuchElementException,
-                                                                       ElementNotVisibleException,
-                                                                       ElementNotSelectableException])
-driver.get("https://www.gmail.com")
-
-
+url="https://www.gmail.com"
+driver.get(url)
 my_email = "rkunchala189@gmail.com"
-my_password = "Raju@7161"
-email_input = wait.until(EC.element_to_be_clickable((By.XPATH, "//input[@type='email']")))
+# my_password = "Raju@7161"
+email_input = driver.find_element(By.XPATH, "//input[@type='email']")
 email_input.send_keys(my_email)
+time.sleep(5)
 
-email_next_button = wait.until(EC.element_to_be_clickable((By.XPATH, "//span[text()='Next']")))
+email_next_button = driver.find_element(By.XPATH, "//span[text()='Next']")
 email_next_button.click()
-time.sleep(10)
+time.sleep(5)
+password_input = driver.find_element(By.XPATH, "//input[@name='Passwd']")
+password_input.send_keys("Raju@7161")
+time.sleep(5)
 
-password_input = wait.until(EC.element_to_be_clickable((By.XPATH, "//input[@type='password']")))
-password_input.send_keys(my_password)
-
-password_next_button = wait.until(EC.element_to_be_clickable((By.XPATH, "//span[text()='Next']")))
+password_next_button = driver.find_element(By.XPATH, "//span[text()='Next']")
 password_next_button.click()
+time.sleep(5)
 
-primary_tab = wait.until(EC.presence_of_element_located((By.XPATH, "//div[text()='Primary']")))
+primary_tab = driver.find_element(By.XPATH, "//div[text()='Primary']")
 is_primary_select = primary_tab.get_attribute("aria-selected")
 
 if not is_primary_select:
     primary_tab.click()
 time.sleep(15)
 
-index_tab = wait.until(EC.presence_of_element_located((By.XPATH, "//div[@data-tooltip='Inbox']")))
+index_tab = driver.find_element(By.XPATH, "//div[@data-tooltip='Inbox']")
 email_count = int(index_tab.text)
 print("Total email in Primary tab is : ", email_count)
 

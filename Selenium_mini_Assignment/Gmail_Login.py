@@ -6,14 +6,14 @@ from selenium.webdriver.support import expected_conditions as EC
 import time
 
 
-chrome_options = webdriver.ChromeOptions()
-chrome_options.add_argument("--incognito")
-driver = webdriver.Chrome(options=chrome_options)
+# chrome_options = webdriver.ChromeOptions()
+# chrome_options.add_argument("--incognito")
+# driver = webdriver.Chrome(options=chrome_options)
 
-# driver = webdriver.Chrome()
+driver = webdriver.Chrome()
 
 driver.maximize_window()
-wait = WebDriverWait(driver, 20, poll_frequency=1, ignored_exceptions=[NoSuchElementException,
+wait = WebDriverWait(driver, 25, poll_frequency=1, ignored_exceptions=[NoSuchElementException,
                                                                        ElementNotVisibleException,
                                                                        ElementNotSelectableException])
 driver.get("https://www.gmail.com")
@@ -26,7 +26,7 @@ email_input.send_keys(my_email)
 
 email_next_button = wait.until(EC.element_to_be_clickable((By.XPATH, "//span[text()='Next']")))
 email_next_button.click()
-
+time.sleep(10)
 
 password_input = wait.until(EC.element_to_be_clickable((By.XPATH, "//input[@type='password']")))
 password_input.send_keys(my_password)

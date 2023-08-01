@@ -4,7 +4,7 @@ import os
 class TakeScreenShot:
 
     @staticmethod
-    def takeScreenShot(self, driver, file_name: str):
+    def takeScreenShot(driver, file_name: str):
         # Get the current working directory
         current_path = os.getcwd()
 

@@ -1,17 +1,17 @@
 import openpyxl
 
-from Selenium_Main_Assignment.Configs.ConfigItems import ConfigItems
+from Configs.ConfigItems import ConfigItems
 
 
 class Read_Excel_file(ConfigItems):
 
-    def read_excel_data(self,file_path, sheet_name):
+    def read_excel_data(self, FILE_PATH, SHEET_NAME):
         try:
             # Load the workbook
-            workbook = openpyxl.load_workbook(file_path)
+            workbook = openpyxl.load_workbook(FILE_PATH)
 
             # Select the sheet by name
-            sheet = workbook[sheet_name]
+            sheet = workbook[SHEET_NAME]
 
             # Initialize a list to store the data
             data = []
@@ -23,13 +23,13 @@ class Read_Excel_file(ConfigItems):
 
             return data
         except KeyError:
-            print(f"Error: Sheet '{sheet_name}' not found in the workbook.")
+            print(f"Error: Sheet '{SHEET_NAME}' not found in the workbook.")
             return None
         except Exception as e:
             print(f"An error occurred: {e}")
             return None
 
-    data = read_excel_data(ConfigItems.file_path,ConfigItems.sheet_name)
+    data = read_excel_data(ConfigItems.FILE_PATH, ConfigItems.SHEET_NAME)
 
     if data:
         for row in data:

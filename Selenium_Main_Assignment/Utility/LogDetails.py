@@ -3,9 +3,8 @@ import logging
 
 
 class LogDetails:
-
     @staticmethod
-    def getLogger(self, file_path):
+    def getLogger(file_path):
         # Get the name of the calling function from the stack
         logger_name = inspect.stack()[1][3]
 
@@ -29,3 +28,5 @@ class LogDetails:
 
         # Return the configured logger object
         return logger
+
+

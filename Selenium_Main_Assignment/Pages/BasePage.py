@@ -1,13 +1,29 @@
+import time
+import traceback
+
+from selenium.common import NoSuchElementException, ElementNotVisibleException, ElementNotSelectableException
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.common.action_chains import ActionChains
+from traceback import print_exc
+
+from selenium.webdriver.common.by import By
+from traceback import print_exc
+import time
+from selenium.webdriver.support.ui import WebDriverWait
+from selenium.common.exceptions import *
+from selenium.webdriver.support import expected_conditions as EC
+from selenium.webdriver import ActionChains
 
 
 # create BasePage class
 class BasePage:
     def __init__(self, driver):
         self.driver = driver
+
+    def open_url(self, url):
+        self.driver.get(url)
 
     # Custom wait for element visibility before interaction with it
     def do_wait(self, by_locator):
@@ -38,7 +54,7 @@ class BasePage:
         WebDriverWait(self.driver, 10).until(EC.visibility_of_element_located(by_locator)).send_keys(input_text)
 
     # Get the visible text of the elements identified by the given locator
-    def get_text(self,by_locator):
+    def get_text(self, by_locator):
         element = WebDriverWait(self.driver, 10).until(EC.visibility_of_element_located(by_locator))
         return element.text
 
@@ -52,4 +68,66 @@ class BasePage:
         WebDriverWait(self.driver, 10).until(EC.title_is(title))
         return self.driver.title
 
+    def get_by_type(self, locator_type):
 
+        locators = {'id': By.ID, 'name': By.NAME, 'xpath': By.XPATH,
+                    'css': By.CSS_SELECTOR, 'class': By.CLASS_NAME, 'link': By.LINK_TEXT}
+        if locator_type in locators:
+            return locators.get(locator_type.lower())
+        else:
+            return False
+
+    def wait_for_element(self, locator, timeout=20, poll_frequency=0.5):
+        element = None
+        try:
+
+            wait = WebDriverWait(self.driver, 20, poll_frequency=1,
+                                 ignored_exceptions=[NoSuchElementException,
+                                                     ElementNotVisibleException,
+                                                     ElementNotSelectableException])
+            # wait.until(EC.visibility_of_element_located(locator))
+            time.sleep(10)
+        except:
+            traceback.print_exc()
+        return element
+
+    # def waitForElement(self, locator):
+    #     web_element = None
+    #     try:
+    #         wait = WebDriverWait(self.driver, 20, poll_frequency=1,
+    #                              ignored_exceptions=[NoSuchElementException,
+    #                                                  ElementNotVisibleException,
+    #                                                  ElementNotSelectableException])
+    #         web_element = wait.until(EC.visibility_of_element_located(locator))
+    #     except Exception as e:
+    #         traceback.print_exc()
+    #     return web_element
+
+    def get_element(self, locator, locator_type="id"):
+
+        element = None
+        try:
+            locator_type = locator_type.lower()
+            byType = self.get_by_type(locator_type)
+            element = self.driver.find_element(byType, locator)
+        except Exception as e:
+            return element
+
+    # def element_click(self, locator, locator_type="id"):
+    #     element = None
+    #     try:
+    #         if locator:
+    #             locator_type = locator_type.lower()
+    #             self.wait_for_element(locator, locator_type)
+    #             element = self.get_element(locator, locator_type)
+    #         element.click()
+    #     except Exception as e:
+    #         print_exc()
+    #         raise e
+
+    def do_click(self, by_locater):
+        WebDriverWait(self.driver, 10).until(EC.visibility_of_element_located(by_locater)).click()
+
+    def get_element_text(self, by_locater):
+        element = WebDriverWait(self.driver, 10).until(EC.visibility_of_element_located(by_locater))
+        return element.text

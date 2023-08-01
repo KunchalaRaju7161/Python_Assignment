@@ -1,8 +1,7 @@
 class ConfigItems:
-
-    # Define constants
     PRODUCT_STORE_URL = "https://www.demoblaze.com/"
-    expected_header_text = "Product Store"
-    file_path ="/Users/rkunchala/pythonAssignments/Python_Assignments/Selenium_Main_Assignment/Resources/test_data.xlsx"
-    sheet_name = "Sheet1"
-
+    FILE_PATH = "/Users/rkunchala/pythonAssignments/Selenium_Main_Assignment/Resources/test_data.xlsx"
+    SHEET_NAME = "Sheet1"
+    EXPECTED_HEADER = "STORE"
+    LOGGER_PATH = "/Users/rkunchala/pythonAssignments/Selenium_Main_Assignment/LoggingReports/login_test.log"
+    CART_URL="https://www.demoblaze.com/cart.html#"

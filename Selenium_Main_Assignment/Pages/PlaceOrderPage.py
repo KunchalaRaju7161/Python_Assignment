@@ -3,7 +3,7 @@ import time
 from selenium.webdriver.common.by import By
 from selenium.webdriver.common.alert import Alert
 
-from Pages.BasePage import BasePage
+from Selenium_Main_Assignment.Pages.BasePage import BasePage
 
 
 class OrderPage(BasePage):
@@ -132,3 +132,4 @@ class OrderPage(BasePage):
         monitor_cart_text = self.get_element_text(self.MONITOR_CART_TEXT)
 
         return monitor_text, monitor_cart_text
+

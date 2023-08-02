@@ -1,6 +1,5 @@
 import pytest
 from selenium import webdriver
-from Configs.ConfigItems import ConfigItems
 
 
 # Fixture to instantiate the browser driver
@@ -14,4 +13,4 @@ def driver(request):
         raise ValueError(f"Unsupported browser: {request.param}")
 
     yield driver
-    # driver.quit()
+    driver.quit()

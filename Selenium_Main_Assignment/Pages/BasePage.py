@@ -1,6 +1,7 @@
 import time
 import traceback
 
+import openpyxl
 from selenium.common import NoSuchElementException, ElementNotVisibleException, ElementNotSelectableException
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
@@ -27,7 +28,7 @@ class BasePage:
 
     # Custom wait for element visibility before interaction with it
     def do_wait(self, by_locator):
-        WebDriverWait(self.driver, 10).until(EC.visibility_of_element_located(by_locator))
+        WebDriverWait(self.driver, 5).until(EC.visibility_of_element_located(by_locator))
 
     # Get a list of web elements that match the given Xpath
     def get_list(self, xpath_string):
@@ -77,16 +78,16 @@ class BasePage:
         else:
             return False
 
-    def wait_for_element(self, locator, timeout=20, poll_frequency=0.5):
+    def wait_for_element(self, locator, timeout=10, poll_frequency=0.5):
         element = None
         try:
 
-            wait = WebDriverWait(self.driver, 20, poll_frequency=1,
+            wait = WebDriverWait(self.driver, 3, poll_frequency=1,
                                  ignored_exceptions=[NoSuchElementException,
                                                      ElementNotVisibleException,
                                                      ElementNotSelectableException])
             # wait.until(EC.visibility_of_element_located(locator))
-            time.sleep(10)
+            time.sleep(2)
         except:
             traceback.print_exc()
         return element
@@ -131,3 +132,27 @@ class BasePage:
     def get_element_text(self, by_locater):
         element = WebDriverWait(self.driver, 10).until(EC.visibility_of_element_located(by_locater))
         return element.text
+
+    def get_elements(self, locator, locator_type="id"):
+        elements = None
+        try:
+            locator_type = locator_type.lower()
+            byType = self.get_by_type(locator_type)
+            elements = self.driver.find_elements(byType, locator)
+        except Exception as e:
+            print("exception failure")
+        return elements
+
+    def getTestData(self, testcaseName, filepath):
+        data_dict = {}
+        book = openpyxl.load_workbook(filepath)
+        sheet = book.active
+
+        # loop every row
+        for i in range(1, sheet.max_row + 1):
+            if sheet.cell(row=i, column=1).value == testcaseName:
+                # loop through each column
+                for j in range(2, sheet.max_column + 1):
+                    data_dict[sheet.cell(row=1, column=j).value] = sheet.cell(row=i, column=j).value
+
+        return [data_dict]

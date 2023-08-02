@@ -1,6 +1,7 @@
 import time
 
 import openpyxl
+from selenium.webdriver.common.alert import Alert
 from selenium.webdriver.common.by import By
 
 from Selenium_Main_Assignment.Configs.ConfigItems import ConfigItems
@@ -26,16 +27,30 @@ class SignUp_Page(BasePage):
         self.do_send_keys(self.PASSWORD, password)
 
     def sign_up_user(self):
-        bk = openpyxl.load_workbook(ConfigItems.Excel_FILE_PATH)
+        bk = openpyxl.load_workbook(ConfigItems.EXCEL_FILE_PATH)
         sheet = bk["Sheet2"]
 
-        username = sheet.cell(row=2, column=1).value
-        password = sheet.cell(row=2, column=2).value
+        # username = sheet.cell(row=2, column=1).value
+        # password = sheet.cell(row=2, column=2).value
+        # Get the last row and last column with data in the sheet
+        last_row = sheet.max_row
+        last_column = sheet.max_column
+
+        # Get the value from the last row and last column
+        username = sheet.cell(row=last_row, column=1).value
+        password = sheet.cell(row=last_row, column=2).value
 
         print(username, password)
+
         self.sign_up_user_data(username, password)
         self.do_click(self.SIGN_UP_BUTTON)
         time.sleep(5)
+        alert = Alert(self.driver)
+        alert_text = alert.text
+        alert.accept()
+
+
+
 
 
 

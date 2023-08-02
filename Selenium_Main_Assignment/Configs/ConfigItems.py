@@ -1,6 +1,6 @@
 class ConfigItems:
     PRODUCT_STORE_URL = "https://www.demoblaze.com/"
-    Excel_FILE_PATH = "/Users/rkunchala/pythonAssignments/Python_Assignments/Selenium_Main_Assignment/Resources/test_data.xlsx"
+    EXCEL_FILE_PATH = "/Users/rkunchala/pythonAssignments/Python_Assignments/Selenium_Main_Assignment/Resources/test_data.xlsx"
     SHEET_NAME = "Sheet1"
     EXPECTED_HEADER = "STORE"
     LOGGER_PATH = "/Users/rkunchala/pythonAssignments/Python_Assignments/Selenium_Main_Assignment/LoggingReports/login_test.log"

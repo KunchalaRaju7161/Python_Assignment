@@ -69,15 +69,7 @@ class BasePage:
         WebDriverWait(self.driver, 10).until(EC.title_is(title))
         return self.driver.title
 
-    def get_by_type(self, locator_type):
-
-        locators = {'id': By.ID, 'name': By.NAME, 'xpath': By.XPATH,
-                    'css': By.CSS_SELECTOR, 'class': By.CLASS_NAME, 'link': By.LINK_TEXT}
-        if locator_type in locators:
-            return locators.get(locator_type.lower())
-        else:
-            return False
-
+    # wait until it get the element wait until it
     def wait_for_element(self, locator, timeout=10, poll_frequency=0.5):
         element = None
         try:
@@ -92,18 +84,6 @@ class BasePage:
             traceback.print_exc()
         return element
 
-    # def waitForElement(self, locator):
-    #     web_element = None
-    #     try:
-    #         wait = WebDriverWait(self.driver, 20, poll_frequency=1,
-    #                              ignored_exceptions=[NoSuchElementException,
-    #                                                  ElementNotVisibleException,
-    #                                                  ElementNotSelectableException])
-    #         web_element = wait.until(EC.visibility_of_element_located(locator))
-    #     except Exception as e:
-    #         traceback.print_exc()
-    #     return web_element
-
     def get_element(self, locator, locator_type="id"):
 
         element = None
@@ -113,18 +93,6 @@ class BasePage:
             element = self.driver.find_element(byType, locator)
         except Exception as e:
             return element
-
-    # def element_click(self, locator, locator_type="id"):
-    #     element = None
-    #     try:
-    #         if locator:
-    #             locator_type = locator_type.lower()
-    #             self.wait_for_element(locator, locator_type)
-    #             element = self.get_element(locator, locator_type)
-    #         element.click()
-    #     except Exception as e:
-    #         print_exc()
-    #         raise e
 
     def do_click(self, by_locater):
         WebDriverWait(self.driver, 10).until(EC.visibility_of_element_located(by_locater)).click()

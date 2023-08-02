@@ -16,6 +16,7 @@ class CartPage(BasePage):
     PRODUCT_NAMES = (By.CSS_SELECTOR, ".product-name")
     PRODUCT_LINKS = (By.XPATH, "//a[@class='hrefch']")
 
+    # # Initialize the CartPage object with a WebDriver instance.
     def __init__(self, driver):
         super().__init__(driver)
         self.driver = driver
@@ -29,16 +30,15 @@ class CartPage(BasePage):
             print(item_name)
         return item_name
 
-
     def get_product_names(self):
         product_names = self.driver.find_elements(self.PRODUCT_NAMES)
         return [product_name.text for product_name in product_names]
 
     def delete_last_item_from_cart(self):
+        # Delete the last item from the cart.
         self.do_click(self.DELETE_BUTTON)
         time.sleep(10)
         product_name1_text = self.get_element_text(self.PRODUCTS_NAME1)
         product_name2_text = self.get_element_text(self.PRODUCTS_NAME2)
         print(product_name2_text, product_name1_text)
         return product_name1_text, product_name2_text
-

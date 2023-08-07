@@ -3,7 +3,7 @@ from Python_Main_Assignment.LoginPage import LoginScreen
 from Python_Main_Assignment.RegisterNewUser import RegisterNewUser
 
 
-class WelcomePage():
+class WelcomePage:
     # create a constractor
     def __init__(self):
         while True:

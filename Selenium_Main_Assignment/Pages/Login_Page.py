@@ -25,7 +25,7 @@ class Login_Page(BasePage):
         self.do_send_keys(self.PASSWORD, password)
 
     def login_user(self):
-        bk = openpyxl.load_workbook(ConfigItems.Excel_FILE_PATH)
+        bk = openpyxl.load_workbook(ConfigItems.EXCEL_FILE_PATH)
         sheet = bk["Sheet2"]
 
         username = sheet.cell(row=2, column=1).value

@@ -36,7 +36,7 @@ class RegisterPage(BasePage):
         self.do_click(self.PURCHASE_BUTTON)
 
     def register_user(self):
-        bk = openpyxl.load_workbook(ConfigItems.Excel_FILE_PATH)
+        bk = openpyxl.load_workbook(ConfigItems.EXCEL_FILE_PATH)
         sheet = bk["Sheet1"]
 
         Name = sheet.cell(row=2, column=1).value

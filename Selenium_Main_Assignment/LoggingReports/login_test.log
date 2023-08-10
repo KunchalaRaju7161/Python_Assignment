@@ -100,3 +100,21 @@ Date: 2/7/2023
 2023-08-02 19:06:59,111 :INFO : Test_Login_Page : Open this Store url :- https://www.demoblaze.com/
 2023-08-02 19:07:59,661 :INFO : Test_Login_Page : Open this Store url :- https://www.demoblaze.com/
 2023-08-02 19:09:03,717 :INFO : Test_Login_Page : Open this Store url :- https://www.demoblaze.com/
+2023-08-10 17:46:38,788 :INFO : Test_HomePage : Open this Store url :- https://www.demoblaze.com/
+2023-08-10 17:46:40,576 :INFO : Test_HomePage : Check the Expected title is equal to Actual title
+2023-08-10 17:46:40,576 :INFO : Test_HomePage : Header validation passed.
+2023-08-10 17:46:40,997 :INFO : Test_HomePage : Open this Store url :- https://www.demoblaze.com/
+2023-08-10 17:46:51,485 :INFO : Test_Login_Page : Open this Store url :- https://www.demoblaze.com/
+2023-08-10 17:47:14,832 :INFO : Test_OrderPage : Open this Store url :- https://www.demoblaze.com/
+2023-08-10 17:47:40,689 :INFO : Test_OrderPage : Phone selected: Nokia lumia 1520, Phone in cart: Nokia lumia 1520
+2023-08-10 17:47:41,497 :INFO : Test_OrderPage : Open this Store url :- https://www.demoblaze.com/
+2023-08-10 17:48:05,457 :INFO : Test_OrderPage : Laptop selected: Sony vaio i7, Laptop in cart: Sony vaio i7
+2023-08-10 17:48:06,222 :INFO : Test_OrderPage : Open this Store url :- https://www.demoblaze.com/
+2023-08-10 17:48:33,596 :INFO : Test_OrderPage : Monitor selected: ASUS Full HD, Monitor in cart: ASUS Full HD
+2023-08-10 17:48:48,750 :INFO : Test_OrderPage : Thank You Message: Thank you for your purchase!, Purchase Details: Id: 3478166
+Amount: 1050 USD
+Card Number: 123456789012345
+Name: Raju
+Date: 10/7/2023
+2023-08-10 17:48:51,048 :INFO : Test_OrderPage : Homepage return validation passed.
+2023-08-10 17:49:37,349 :INFO : Test_CartPage : Open this Store url :- https://www.demoblaze.com/cart.html#

@@ -58,6 +58,8 @@ def verify_password():
     for each_address_index in range(0, len(dict_response)):
         passwords = dict_response[each_address_index]['password']
         print(passwords)
-        is_valid_password(passwords)
+        if is_valid_password(passwords) == False:
+            print("Invalid Format Password : " + passwords)
+            return False
 
-
+    return True

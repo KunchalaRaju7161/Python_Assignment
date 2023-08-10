@@ -1,10 +1,7 @@
-import unittest
 
-import jsonschema
-import pandas as pd
 import openpyxl
 import requests
-from _pytest.outcomes import fail
+
 
 from API_Assignment.Test_Data.Config import ConfigItems
 from API_Assignment.Utility.CommonAssersions import assert_response_status, assertEqualWithMessage

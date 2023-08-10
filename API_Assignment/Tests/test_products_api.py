@@ -1,7 +1,4 @@
-import jsonschema
-import openpyxl
-import requests
-from _pytest.outcomes import fail
+
 
 from API_Assignment.Test_Data.Config import ConfigItems
 

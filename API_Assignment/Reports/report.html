@@ -253,10 +253,10 @@ function filterTable(elem) { // eslint-disable-line no-unused-vars
 }
 </script>
     <h1>report.html</h1>
-    <p>Report generated on 10-Aug-2023 at 17:44:21 by <a href="https://pypi.python.org/pypi/pytest-html">pytest-html</a> v3.2.0</p>
+    <p>Report generated on 10-Aug-2023 at 18:25:34 by <a href="https://pypi.python.org/pypi/pytest-html">pytest-html</a> v3.2.0</p>
     <h2>Summary</h2>
-    <p>0 tests ran in 0.51 seconds. </p>
-    <p class="filter" hidden="true">(Un)check the boxes to filter the results.</p><input checked="true" class="filter" data-test-result="passed" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="passed">0 passed</span>, <input checked="true" class="filter" data-test-result="skipped" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="skipped">0 skipped</span>, <input checked="true" class="filter" data-test-result="failed" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="failed">0 failed</span>, <input checked="true" class="filter" data-test-result="error" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="error">8 errors</span>, <input checked="true" class="filter" data-test-result="xfailed" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="xfailed">0 expected failures</span>, <input checked="true" class="filter" data-test-result="xpassed" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="xpassed">0 unexpected passes</span>
+    <p>9 tests ran in 7.96 seconds. </p>
+    <p class="filter" hidden="true">(Un)check the boxes to filter the results.</p><input checked="true" class="filter" data-test-result="passed" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="passed">8 passed</span>, <input checked="true" class="filter" data-test-result="skipped" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="skipped">0 skipped</span>, <input checked="true" class="filter" data-test-result="failed" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="failed">1 failed</span>, <input checked="true" class="filter" data-test-result="error" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="error">0 errors</span>, <input checked="true" class="filter" data-test-result="xfailed" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="xfailed">0 expected failures</span>, <input checked="true" class="filter" data-test-result="xpassed" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="xpassed">0 unexpected passes</span>
     <h2>Results</h2>
     <table id="results-table">
       <thead id="results-table-head">
@@ -267,75 +267,84 @@ function filterTable(elem) { // eslint-disable-line no-unused-vars
           <th class="sortable links" col="links">Links</th></tr>
         <tr hidden="true" id="not-found-message">
           <th colspan="4">No results found. Try to check the filters</th></tr></thead>
-      <tbody class="error results-table-row">
+      <tbody class="failed results-table-row">
         <tr>
-          <td class="col-result">Error</td>
-          <td class="col-name">API_Assignment/Tests/test_carts_api.py::collect</td>
-          <td class="col-duration"></td>
+          <td class="col-result">Failed</td>
+          <td class="col-name">API_Assignment/Tests/test_user_api.py::test_verify_password</td>
+          <td class="col-duration">0.92</td>
           <td class="col-links"></td></tr>
         <tr>
           <td class="extra" colspan="4">
-            <div class="log">ImportError while importing test module &#x27;/Users/rkunchala/pythonAssignments/Python_Assignments/API_Assignment/Tests/test_carts_api.py&#x27;.<br/>Hint: make sure your test modules/packages have valid Python names.<br/>Traceback:<br/>/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/importlib/__init__.py:126: in import_module<br/>    return _bootstrap._gcd_import(name[level:], package, level)<br/>API_Assignment/Tests/test_carts_api.py:1: in &lt;module&gt;<br/>    from API_Assignment.POM.Carts_api import response_schema, product_fields<br/><span class="error">E   ModuleNotFoundError: No module named &#x27;API_Assignment&#x27;</span><br/></div></td></tr></tbody>
-      <tbody class="error results-table-row">
+            <div class="empty log">No log output captured.</div></td></tr></tbody>
+      <tbody class="passed results-table-row">
         <tr>
-          <td class="col-result">Error</td>
-          <td class="col-name">API_Assignment/Tests/test_products_api.py::collect</td>
-          <td class="col-duration"></td>
+          <td class="col-result">Passed</td>
+          <td class="col-name">API_Assignment/Tests/test_carts_api.py::test_response_schema</td>
+          <td class="col-duration">0.91</td>
           <td class="col-links"></td></tr>
         <tr>
           <td class="extra" colspan="4">
-            <div class="log">ImportError while importing test module &#x27;/Users/rkunchala/pythonAssignments/Python_Assignments/API_Assignment/Tests/test_products_api.py&#x27;.<br/>Hint: make sure your test modules/packages have valid Python names.<br/>Traceback:<br/>/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/importlib/__init__.py:126: in import_module<br/>    return _bootstrap._gcd_import(name[level:], package, level)<br/>API_Assignment/Tests/test_products_api.py:3: in &lt;module&gt;<br/>    from API_Assignment.Test_Data.Config import ConfigItems<br/><span class="error">E   ModuleNotFoundError: No module named &#x27;API_Assignment&#x27;</span><br/></div></td></tr></tbody>
-      <tbody class="error results-table-row">
+            <div class="empty log">No log output captured.</div></td></tr></tbody>
+      <tbody class="passed results-table-row">
         <tr>
-          <td class="col-result">Error</td>
-          <td class="col-name">API_Assignment/Tests/test_user_api.py::collect</td>
-          <td class="col-duration"></td>
+          <td class="col-result">Passed</td>
+          <td class="col-name">API_Assignment/Tests/test_carts_api.py::test_product_fields</td>
+          <td class="col-duration">0.75</td>
           <td class="col-links"></td></tr>
         <tr>
           <td class="extra" colspan="4">
-            <div class="log">ImportError while importing test module &#x27;/Users/rkunchala/pythonAssignments/Python_Assignments/API_Assignment/Tests/test_user_api.py&#x27;.<br/>Hint: make sure your test modules/packages have valid Python names.<br/>Traceback:<br/>/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/importlib/__init__.py:126: in import_module<br/>    return _bootstrap._gcd_import(name[level:], package, level)<br/>API_Assignment/Tests/test_user_api.py:3: in &lt;module&gt;<br/>    from API_Assignment.POM.User_api import get_user_data, verify_response_notnull, verify_password<br/><span class="error">E   ModuleNotFoundError: No module named &#x27;API_Assignment&#x27;</span><br/></div></td></tr></tbody>
-      <tbody class="error results-table-row">
+            <div class="empty log">No log output captured.</div></td></tr></tbody>
+      <tbody class="passed results-table-row">
         <tr>
-          <td class="col-result">Error</td>
-          <td class="col-name">Selenium_Main_Assignment/Tests/test_HomePage.py::collect</td>
-          <td class="col-duration"></td>
+          <td class="col-result">Passed</td>
+          <td class="col-name">API_Assignment/Tests/test_products_api.py::test_api_returns_20_products</td>
+          <td class="col-duration">0.36</td>
           <td class="col-links"></td></tr>
         <tr>
           <td class="extra" colspan="4">
-            <div class="log">ImportError while importing test module &#x27;/Users/rkunchala/pythonAssignments/Python_Assignments/Selenium_Main_Assignment/Tests/test_HomePage.py&#x27;.<br/>Hint: make sure your test modules/packages have valid Python names.<br/>Traceback:<br/>/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/importlib/__init__.py:126: in import_module<br/>    return _bootstrap._gcd_import(name[level:], package, level)<br/>Selenium_Main_Assignment/Tests/test_HomePage.py:1: in &lt;module&gt;<br/>    from Selenium_Main_Assignment.Configs.ConfigItems import ConfigItems<br/><span class="error">E   ModuleNotFoundError: No module named &#x27;Selenium_Main_Assignment&#x27;</span><br/></div></td></tr></tbody>
-      <tbody class="error results-table-row">
+            <div class="empty log">No log output captured.</div></td></tr></tbody>
+      <tbody class="passed results-table-row">
         <tr>
-          <td class="col-result">Error</td>
-          <td class="col-name">Selenium_Main_Assignment/Tests/test_Login_Page.py::collect</td>
-          <td class="col-duration"></td>
+          <td class="col-result">Passed</td>
+          <td class="col-name">API_Assignment/Tests/test_products_api.py::test_unique_ids</td>
+          <td class="col-duration">0.51</td>
           <td class="col-links"></td></tr>
         <tr>
           <td class="extra" colspan="4">
-            <div class="log">ImportError while importing test module &#x27;/Users/rkunchala/pythonAssignments/Python_Assignments/Selenium_Main_Assignment/Tests/test_Login_Page.py&#x27;.<br/>Hint: make sure your test modules/packages have valid Python names.<br/>Traceback:<br/>/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/importlib/__init__.py:126: in import_module<br/>    return _bootstrap._gcd_import(name[level:], package, level)<br/>Selenium_Main_Assignment/Tests/test_Login_Page.py:3: in &lt;module&gt;<br/>    from Selenium_Main_Assignment.Configs.ConfigItems import ConfigItems<br/><span class="error">E   ModuleNotFoundError: No module named &#x27;Selenium_Main_Assignment&#x27;</span><br/></div></td></tr></tbody>
-      <tbody class="error results-table-row">
+            <div class="empty log">No log output captured.</div></td></tr></tbody>
+      <tbody class="passed results-table-row">
         <tr>
-          <td class="col-result">Error</td>
-          <td class="col-name">Selenium_Main_Assignment/Tests/test_OrderPage.py::collect</td>
-          <td class="col-duration"></td>
+          <td class="col-result">Passed</td>
+          <td class="col-name">API_Assignment/Tests/test_products_api.py::test_read</td>
+          <td class="col-duration">0.00</td>
           <td class="col-links"></td></tr>
         <tr>
           <td class="extra" colspan="4">
-            <div class="log">ImportError while importing test module &#x27;/Users/rkunchala/pythonAssignments/Python_Assignments/Selenium_Main_Assignment/Tests/test_OrderPage.py&#x27;.<br/>Hint: make sure your test modules/packages have valid Python names.<br/>Traceback:<br/>/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/importlib/__init__.py:126: in import_module<br/>    return _bootstrap._gcd_import(name[level:], package, level)<br/>Selenium_Main_Assignment/Tests/test_OrderPage.py:4: in &lt;module&gt;<br/>    from Selenium_Main_Assignment.Pages.CartPage import CartPage<br/><span class="error">E   ModuleNotFoundError: No module named &#x27;Selenium_Main_Assignment&#x27;</span><br/></div></td></tr></tbody>
-      <tbody class="error results-table-row">
+            <div class="empty log">No log output captured.</div></td></tr></tbody>
+      <tbody class="passed results-table-row">
         <tr>
-          <td class="col-result">Error</td>
-          <td class="col-name">Selenium_Main_Assignment/Tests/test_SignUp_Page.py::collect</td>
-          <td class="col-duration"></td>
+          <td class="col-result">Passed</td>
+          <td class="col-name">API_Assignment/Tests/test_products_api.py::test_excel_data</td>
+          <td class="col-duration">2.75</td>
           <td class="col-links"></td></tr>
         <tr>
           <td class="extra" colspan="4">
-            <div class="log">ImportError while importing test module &#x27;/Users/rkunchala/pythonAssignments/Python_Assignments/Selenium_Main_Assignment/Tests/test_SignUp_Page.py&#x27;.<br/>Hint: make sure your test modules/packages have valid Python names.<br/>Traceback:<br/>/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/importlib/__init__.py:126: in import_module<br/>    return _bootstrap._gcd_import(name[level:], package, level)<br/>Selenium_Main_Assignment/Tests/test_SignUp_Page.py:3: in &lt;module&gt;<br/>    from Selenium_Main_Assignment.Configs.ConfigItems import ConfigItems<br/><span class="error">E   ModuleNotFoundError: No module named &#x27;Selenium_Main_Assignment&#x27;</span><br/></div></td></tr></tbody>
-      <tbody class="error results-table-row">
+            <div class="empty log">No log output captured.</div></td></tr></tbody>
+      <tbody class="passed results-table-row">
         <tr>
-          <td class="col-result">Error</td>
-          <td class="col-name">Selenium_Main_Assignment/Tests/test_cartPage.py::collect</td>
-          <td class="col-duration"></td>
+          <td class="col-result">Passed</td>
+          <td class="col-name">API_Assignment/Tests/test_user_api.py::test_specific_users_presence</td>
+          <td class="col-duration">0.61</td>
           <td class="col-links"></td></tr>
         <tr>
           <td class="extra" colspan="4">
-            <div class="log">ImportError while importing test module &#x27;/Users/rkunchala/pythonAssignments/Python_Assignments/Selenium_Main_Assignment/Tests/test_cartPage.py&#x27;.<br/>Hint: make sure your test modules/packages have valid Python names.<br/>Traceback:<br/>/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/importlib/__init__.py:126: in import_module<br/>    return _bootstrap._gcd_import(name[level:], package, level)<br/>Selenium_Main_Assignment/Tests/test_cartPage.py:1: in &lt;module&gt;<br/>    from Selenium_Main_Assignment.Pages.CartPage import CartPage<br/><span class="error">E   ModuleNotFoundError: No module named &#x27;Selenium_Main_Assignment&#x27;</span><br/></div></td></tr></tbody></table></body></html>
+            <div class="empty log">No log output captured.</div></td></tr></tbody>
+      <tbody class="passed results-table-row">
+        <tr>
+          <td class="col-result">Passed</td>
+          <td class="col-name">API_Assignment/Tests/test_user_api.py::test_verify_response_notnull</td>
+          <td class="col-duration">0.71</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="empty log">No log output captured.</div></td></tr></tbody></table></body></html>

@@ -1,7 +1,4 @@
-
-
 from API_Assignment.Test_Data.Config import ConfigItems
-
 from API_Assignment.POM.Products import api_returns_20_products, unique_ids, read_excel_data, varify_bulk_data
 
 

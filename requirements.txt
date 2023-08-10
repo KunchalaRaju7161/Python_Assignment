@@ -5,3 +5,4 @@ selenium~=4.10.0
 pytest~=7.4.0
 webdrivermanager~=0.10.0
 requests~=2.31.0
+jsonschema~=4.19.0

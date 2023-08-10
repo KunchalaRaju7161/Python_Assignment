@@ -4,7 +4,7 @@ from API_Assignment.Test_Data.Config import ConfigItems
 
 def read_excel_file(tasknumber):
     workbook = openpyxl.load_workbook(ConfigItems.EXCEL_PATH)
-    worksheet = workbook[ConfigItems.SHEET_NAME]
+    worksheet = workbook.active
 
     dict_from_excel = {}
     for row in worksheet.iter_rows(values_only=True):
@@ -16,7 +16,7 @@ def read_excel_file(tasknumber):
 
 def write_to_excel(data):
     workbook = openpyxl.load_workbook(ConfigItems.EXCEL_PATH)
-    worksheet = workbook[ConfigItems.SHEET_NAME]
+    worksheet = workbook.active
 
     # Assuming data is a list of values to be written in the row
     worksheet.append(data)

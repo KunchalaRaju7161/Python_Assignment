@@ -1,29 +1,33 @@
 import json
 import re
-
 import requests
-
 from API_Assignment.Test_Data.Config import ConfigItems
+from API_Assignment.Utility.LogDetails import LogDetails
 
 url = ConfigItems.USER_API_URL
+logging = LogDetails.getLogger(ConfigItems.LOGGER_PATH)
 
 
 def get_user_data():
+    logging.info("Fetching user data from the API...")
     response = requests.get(url)
     response_str_data = str(response.json())
     data = ['david', 'don', 'miriam']
     for each_value in data:
         match_info = re.findall(each_value.lower(), response_str_data.lower())
         if match_info:
-            print("Match found and passed for : " + each_value)
+            logging.info("Match found and passed for : %s", each_value)
+
         else:
-            print("match not found : " + each_value)
-            print(response.json())
+            logging.error("Match not found : %s", each_value)
+            logging.debug("API Response: %s", response.json())
             assert False, "Match not found"
 
 
 def verify_response_notnull():
+    logging.info("Fetching user data from the API...")
     response = requests.get(url)
+    logging.info("API response received successfully.")
     response_json = response.json()
     json_final_response = json.dumps(response_json, indent=4)
     dict_response = json.loads(json_final_response)
@@ -51,15 +55,17 @@ def is_valid_password(password):
 
 
 def verify_password():
+    logging.info("Fetching user data from the API...")
     response = requests.get(url)
+    logging.info("API response received successfully.")
     response_json = response.json()
     json_final_response = json.dumps(response_json, indent=4)
     dict_response = json.loads(json_final_response)
     for each_address_index in range(0, len(dict_response)):
         passwords = dict_response[each_address_index]['password']
-        print(passwords)
+        logging.info("Verifying password format for: %s", passwords)
         if is_valid_password(passwords) == False:
-            print("Invalid Format Password : " + passwords)
+            logging.error("Invalid Format Password : %s", passwords)
             return False
 
     return True

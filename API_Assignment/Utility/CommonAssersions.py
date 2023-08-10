@@ -16,3 +16,8 @@ def assert_response_jsonHeader(response):
 
 def assert_string(str1, str2):
     assert str1 == str2
+
+
+def assertEqualWithMessage(actual, expected, message):
+    if actual != expected:
+        raise AssertionError(message)

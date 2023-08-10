@@ -59,4 +59,10 @@ def extractfromDic(payload, key):
 
 
 def jsonParse(response):
-    return response.json()
+    try:
+        # Assuming the response is in JSON format, parse and return the JSON data
+        return response.json()
+    except json.JSONDecodeError as e:
+        # Handle the case where the response is not in valid JSON format
+        print(f"Error decoding JSON response: {e}")
+        return None

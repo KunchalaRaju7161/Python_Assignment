@@ -25,11 +25,39 @@ def get_user_data():
 def verify_response_notnull():
     response = requests.get(url)
     response_json = response.json()
-    json_final_response = json.dumps(response, indent=4)
+    json_final_response = json.dumps(response_json, indent=4)
     dict_response = json.loads(json_final_response)
-    for each_address_index in range(len(dict_response)):
+    for each_address_index in range(0, len(dict_response)):
+        assert dict_response[each_address_index]['address']['geolocation'][
+                   'lat'] != None, "latitud value for address " + str(each_address_index + 1) + " has None Value"
+        assert dict_response[each_address_index]['address']['geolocation'][
+                   'long'] != None, "long value for address " + str(each_address_index + 1) + " has None Value"
 
-        assert dict_response[each_address_index]['address']['geolocation']['lat'] is not None, "latitud value for address " + str(each_address_index)
-        assert dict_response[each_address_index]['address']['geolocation']['long'] is not None, "long value for address " + str(each_address_index)
+
+def is_valid_password(password):
+    # Check for at least 1 character
+    if not any(c.isalpha() for c in password):
+        return False
+
+    # Check for at least 1 special character
+    if not any(c for c in password if c in "!@#$%^&*()-_=+[]{}|;:'\",.<>?/"):
+        return False
+
+    # Check for at least 1 number
+    if not any(c.isdigit() for c in password):
+        return False
+
+    return True
+
+
+def verify_password():
+    response = requests.get(url)
+    response_json = response.json()
+    json_final_response = json.dumps(response_json, indent=4)
+    dict_response = json.loads(json_final_response)
+    for each_address_index in range(0, len(dict_response)):
+        passwords = dict_response[each_address_index]['password']
+        print(passwords)
+        is_valid_password(passwords)
 
 

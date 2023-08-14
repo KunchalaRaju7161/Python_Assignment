@@ -2680,3 +2680,996 @@ On instance:
 2023-08-10 18:25:34,762 :ERROR : <module> : Invalid Format Password : ewedon
 2023-08-10 18:25:34,762 :ERROR : <module> : Invalid Format Password : ewedon
 2023-08-10 18:25:34,762 :ERROR : <module> : Invalid Format Password : ewedon
+2023-08-14 10:51:09,736 :INFO : <module> : Fetching data from the API...
+2023-08-14 10:51:10,477 :INFO : <module> : API response received successfully.
+2023-08-14 10:51:10,479 :INFO : <module> : API returned 20 products as expected.
+2023-08-14 10:58:43,794 :INFO : <module> : Fetching data from the API...
+2023-08-14 10:58:44,460 :INFO : <module> : API response received successfully.
+2023-08-14 10:58:44,461 :INFO : <module> : All IDs in the API response are unique.
+2023-08-14 11:04:20,210 :INFO : <module> : Reading data from Excel file: /Users/rkunchala/pythonAssignments/Python_Assignments/API_Assignment/Resources/Products.xlsx
+2023-08-14 11:04:55,218 :INFO : <module> : Reading data from Excel file: /Users/rkunchala/pythonAssignments/Python_Assignments/API_Assignment/Resources/Products.xlsx
+2023-08-14 11:04:55,627 :INFO : <module> : POST request successful!
+2023-08-14 11:04:55,628 :INFO : <module> : Response: {"id":21,"title":"test product","price":"13.5","description":"This is description","image":"https://i.pravatar.cc","category":"electronic"}
+2023-08-14 11:04:56,347 :INFO : <module> : POST request successful!
+2023-08-14 11:04:56,348 :INFO : <module> : Response: {"id":21,"title":"test product1","price":"14.5","description":"This is description","image":"https://i.pravatar.cc","category":"electronic"}
+2023-08-14 11:04:56,895 :INFO : <module> : POST request successful!
+2023-08-14 11:04:56,895 :INFO : <module> : Response: {"id":21,"title":"test product2","price":"15.5","description":"This is description","image":"https://i.pravatar.cc","category":"electronic"}
+2023-08-14 11:04:57,431 :INFO : <module> : POST request successful!
+2023-08-14 11:04:57,431 :INFO : <module> : Response: {"id":21,"title":"test product3","price":"16.5","description":"This is description","image":"https://i.pravatar.cc","category":"electronic"}
+2023-08-14 11:04:58,063 :INFO : <module> : POST request successful!
+2023-08-14 11:04:58,064 :INFO : <module> : Response: {"id":21,"title":"test product4","price":"17.5","description":"This is description","image":"https://i.pravatar.cc","category":"electronic"}
+2023-08-14 11:06:56,552 :INFO : <module> : Reading data from Excel file: /Users/rkunchala/pythonAssignments/Python_Assignments/API_Assignment/Resources/Products.xlsx
+2023-08-14 11:06:57,016 :INFO : <module> : POST request successful!
+2023-08-14 11:06:57,016 :INFO : <module> : Response: {"id":21,"title":"test product5","price":"13.5","description":"This is description","image":"https://i.pravatar.cc","category":"electronic"}
+2023-08-14 11:06:57,791 :INFO : <module> : POST request successful!
+2023-08-14 11:06:57,792 :INFO : <module> : Response: {"id":21,"title":"test product1","price":"14.5","description":"This is description","image":"https://i.pravatar.cc","category":"electronic"}
+2023-08-14 11:06:58,364 :INFO : <module> : POST request successful!
+2023-08-14 11:06:58,365 :INFO : <module> : Response: {"id":21,"title":"test product2","price":"15.5","description":"This is description","image":"https://i.pravatar.cc","category":"electronic"}
+2023-08-14 11:06:58,907 :INFO : <module> : POST request successful!
+2023-08-14 11:06:58,907 :INFO : <module> : Response: {"id":21,"title":"test product3","price":"16.5","description":"This is description","image":"https://i.pravatar.cc","category":"electronic"}
+2023-08-14 11:06:59,248 :INFO : <module> : POST request successful!
+2023-08-14 11:06:59,249 :INFO : <module> : Response: {"id":21,"title":"test product4","price":"17.5","description":"This is description","image":"https://i.pravatar.cc","category":"electronic"}
+2023-08-14 11:11:05,241 :INFO : <module> : Fetching user data from the API...
+2023-08-14 11:11:05,981 :INFO : <module> : Match found and passed for : david
+2023-08-14 11:11:05,982 :INFO : <module> : Match found and passed for : don
+2023-08-14 11:11:05,982 :INFO : <module> : Match found and passed for : miriam
+2023-08-14 11:13:19,001 :INFO : <module> : Fetching user data from the API...
+2023-08-14 11:13:19,664 :INFO : <module> : API response received successfully.
+2023-08-14 11:16:45,008 :INFO : <module> : Fetching user data from the API...
+2023-08-14 11:16:45,814 :INFO : <module> : API response received successfully.
+2023-08-14 11:21:15,444 :INFO : <module> : Fetching user data from the API...
+2023-08-14 11:21:16,306 :INFO : <module> : API response received successfully.
+2023-08-14 11:23:15,117 :INFO : <module> : Fetching user data from the API...
+2023-08-14 11:23:15,853 :INFO : <module> : API response received successfully.
+2023-08-14 11:23:15,855 :INFO : <module> : [
+    {
+        "address": {
+            "geolocation": {
+                "lat": "-37.3159",
+                "long": "81.1496"
+            },
+            "city": "kilcoole",
+            "street": "new road",
+            "number": 7682,
+            "zipcode": "12926-3874"
+        },
+        "id": 1,
+        "email": "john@gmail.com",
+        "username": "johnd",
+        "password": "m38rmF$",
+        "name": {
+            "firstname": "john",
+            "lastname": "doe"
+        },
+        "phone": "1-570-236-7033",
+        "__v": 0
+    },
+    {
+        "address": {
+            "geolocation": {
+                "lat": "-37.3159",
+                "long": "81.1496"
+            },
+            "city": "kilcoole",
+            "street": "Lovers Ln",
+            "number": 7267,
+            "zipcode": "12926-3874"
+        },
+        "id": 2,
+        "email": "morrison@gmail.com",
+        "username": "mor_2314",
+        "password": "83r5^_",
+        "name": {
+            "firstname": "david",
+            "lastname": "morrison"
+        },
+        "phone": "1-570-236-7033",
+        "__v": 0
+    },
+    {
+        "address": {
+            "geolocation": {
+                "lat": "40.3467",
+                "long": "-30.1310"
+            },
+            "city": "Cullman",
+            "street": "Frances Ct",
+            "number": 86,
+            "zipcode": "29567-1452"
+        },
+        "id": 3,
+        "email": "kevin@gmail.com",
+        "username": "kevinryan",
+        "password": "kev02937@",
+        "name": {
+            "firstname": "kevin",
+            "lastname": "ryan"
+        },
+        "phone": "1-567-094-1345",
+        "__v": 0
+    },
+    {
+        "address": {
+            "geolocation": {
+                "lat": "50.3467",
+                "long": "-20.1310"
+            },
+            "city": "San Antonio",
+            "street": "Hunters Creek Dr",
+            "number": 6454,
+            "zipcode": "98234-1734"
+        },
+        "id": 4,
+        "email": "don@gmail.com",
+        "username": "donero",
+        "password": "ewedon",
+        "name": {
+            "firstname": "don",
+            "lastname": "romer"
+        },
+        "phone": "1-765-789-6734",
+        "__v": 0
+    },
+    {
+        "address": {
+            "geolocation": {
+                "lat": "40.3467",
+                "long": "-40.1310"
+            },
+            "city": "san Antonio",
+            "street": "adams St",
+            "number": 245,
+            "zipcode": "80796-1234"
+        },
+        "id": 5,
+        "email": "derek@gmail.com",
+        "username": "derek",
+        "password": "jklg*_56",
+        "name": {
+            "firstname": "derek",
+            "lastname": "powell"
+        },
+        "phone": "1-956-001-1945",
+        "__v": 0
+    },
+    {
+        "address": {
+            "geolocation": {
+                "lat": "20.1677",
+                "long": "-10.6789"
+            },
+            "city": "el paso",
+            "street": "prospect st",
+            "number": 124,
+            "zipcode": "12346-0456"
+        },
+        "id": 6,
+        "email": "david_r@gmail.com",
+        "username": "david_r",
+        "password": "3478*#54",
+        "name": {
+            "firstname": "david",
+            "lastname": "russell"
+        },
+        "phone": "1-678-345-9856",
+        "__v": 0
+    },
+    {
+        "address": {
+            "geolocation": {
+                "lat": "10.3456",
+                "long": "20.6419"
+            },
+            "city": "fresno",
+            "street": "saddle st",
+            "number": 1342,
+            "zipcode": "96378-0245"
+        },
+        "id": 7,
+        "email": "miriam@gmail.com",
+        "username": "snyder",
+        "password": "f238&@*$",
+        "name": {
+            "firstname": "miriam",
+            "lastname": "snyder"
+        },
+        "phone": "1-123-943-0563",
+        "__v": 0
+    },
+    {
+        "address": {
+            "geolocation": {
+                "lat": "50.3456",
+                "long": "10.6419"
+            },
+            "city": "mesa",
+            "street": "vally view ln",
+            "number": 1342,
+            "zipcode": "96378-0245"
+        },
+        "id": 8,
+        "email": "william@gmail.com",
+        "username": "hopkins",
+        "password": "William56$hj",
+        "name": {
+            "firstname": "william",
+            "lastname": "hopkins"
+        },
+        "phone": "1-478-001-0890",
+        "__v": 0
+    },
+    {
+        "address": {
+            "geolocation": {
+                "lat": "40.12456",
+                "long": "20.5419"
+            },
+            "city": "miami",
+            "street": "avondale ave",
+            "number": 345,
+            "zipcode": "96378-0245"
+        },
+        "id": 9,
+        "email": "kate@gmail.com",
+        "username": "kate_h",
+        "password": "kfejk@*_",
+        "name": {
+            "firstname": "kate",
+            "lastname": "hale"
+        },
+        "phone": "1-678-456-1934",
+        "__v": 0
+    },
+    {
+        "address": {
+            "geolocation": {
+                "lat": "30.24788",
+                "long": "-20.545419"
+            },
+            "city": "fort wayne",
+            "street": "oak lawn ave",
+            "number": 526,
+            "zipcode": "10256-4532"
+        },
+        "id": 10,
+        "email": "jimmie@gmail.com",
+        "username": "jimmie_k",
+        "password": "klein*#%*",
+        "name": {
+            "firstname": "jimmie",
+            "lastname": "klein"
+        },
+        "phone": "1-104-001-4567",
+        "__v": 0
+    }
+]
+2023-08-14 11:24:04,377 :INFO : <module> : Fetching user data from the API...
+2023-08-14 11:24:04,953 :INFO : <module> : API response received successfully.
+2023-08-14 11:24:04,954 :INFO : <module> : [
+    {
+        "address": {
+            "geolocation": {
+                "lat": "-37.3159",
+                "long": "81.1496"
+            },
+            "city": "kilcoole",
+            "street": "new road",
+            "number": 7682,
+            "zipcode": "12926-3874"
+        },
+        "id": 1,
+        "email": "john@gmail.com",
+        "username": "johnd",
+        "password": "m38rmF$",
+        "name": {
+            "firstname": "john",
+            "lastname": "doe"
+        },
+        "phone": "1-570-236-7033",
+        "__v": 0
+    },
+    {
+        "address": {
+            "geolocation": {
+                "lat": "-37.3159",
+                "long": "81.1496"
+            },
+            "city": "kilcoole",
+            "street": "Lovers Ln",
+            "number": 7267,
+            "zipcode": "12926-3874"
+        },
+        "id": 2,
+        "email": "morrison@gmail.com",
+        "username": "mor_2314",
+        "password": "83r5^_",
+        "name": {
+            "firstname": "david",
+            "lastname": "morrison"
+        },
+        "phone": "1-570-236-7033",
+        "__v": 0
+    },
+    {
+        "address": {
+            "geolocation": {
+                "lat": "40.3467",
+                "long": "-30.1310"
+            },
+            "city": "Cullman",
+            "street": "Frances Ct",
+            "number": 86,
+            "zipcode": "29567-1452"
+        },
+        "id": 3,
+        "email": "kevin@gmail.com",
+        "username": "kevinryan",
+        "password": "kev02937@",
+        "name": {
+            "firstname": "kevin",
+            "lastname": "ryan"
+        },
+        "phone": "1-567-094-1345",
+        "__v": 0
+    },
+    {
+        "address": {
+            "geolocation": {
+                "lat": "50.3467",
+                "long": "-20.1310"
+            },
+            "city": "San Antonio",
+            "street": "Hunters Creek Dr",
+            "number": 6454,
+            "zipcode": "98234-1734"
+        },
+        "id": 4,
+        "email": "don@gmail.com",
+        "username": "donero",
+        "password": "ewedon",
+        "name": {
+            "firstname": "don",
+            "lastname": "romer"
+        },
+        "phone": "1-765-789-6734",
+        "__v": 0
+    },
+    {
+        "address": {
+            "geolocation": {
+                "lat": "40.3467",
+                "long": "-40.1310"
+            },
+            "city": "san Antonio",
+            "street": "adams St",
+            "number": 245,
+            "zipcode": "80796-1234"
+        },
+        "id": 5,
+        "email": "derek@gmail.com",
+        "username": "derek",
+        "password": "jklg*_56",
+        "name": {
+            "firstname": "derek",
+            "lastname": "powell"
+        },
+        "phone": "1-956-001-1945",
+        "__v": 0
+    },
+    {
+        "address": {
+            "geolocation": {
+                "lat": "20.1677",
+                "long": "-10.6789"
+            },
+            "city": "el paso",
+            "street": "prospect st",
+            "number": 124,
+            "zipcode": "12346-0456"
+        },
+        "id": 6,
+        "email": "david_r@gmail.com",
+        "username": "david_r",
+        "password": "3478*#54",
+        "name": {
+            "firstname": "david",
+            "lastname": "russell"
+        },
+        "phone": "1-678-345-9856",
+        "__v": 0
+    },
+    {
+        "address": {
+            "geolocation": {
+                "lat": "10.3456",
+                "long": "20.6419"
+            },
+            "city": "fresno",
+            "street": "saddle st",
+            "number": 1342,
+            "zipcode": "96378-0245"
+        },
+        "id": 7,
+        "email": "miriam@gmail.com",
+        "username": "snyder",
+        "password": "f238&@*$",
+        "name": {
+            "firstname": "miriam",
+            "lastname": "snyder"
+        },
+        "phone": "1-123-943-0563",
+        "__v": 0
+    },
+    {
+        "address": {
+            "geolocation": {
+                "lat": "50.3456",
+                "long": "10.6419"
+            },
+            "city": "mesa",
+            "street": "vally view ln",
+            "number": 1342,
+            "zipcode": "96378-0245"
+        },
+        "id": 8,
+        "email": "william@gmail.com",
+        "username": "hopkins",
+        "password": "William56$hj",
+        "name": {
+            "firstname": "william",
+            "lastname": "hopkins"
+        },
+        "phone": "1-478-001-0890",
+        "__v": 0
+    },
+    {
+        "address": {
+            "geolocation": {
+                "lat": "40.12456",
+                "long": "20.5419"
+            },
+            "city": "miami",
+            "street": "avondale ave",
+            "number": 345,
+            "zipcode": "96378-0245"
+        },
+        "id": 9,
+        "email": "kate@gmail.com",
+        "username": "kate_h",
+        "password": "kfejk@*_",
+        "name": {
+            "firstname": "kate",
+            "lastname": "hale"
+        },
+        "phone": "1-678-456-1934",
+        "__v": 0
+    },
+    {
+        "address": {
+            "geolocation": {
+                "lat": "30.24788",
+                "long": "-20.545419"
+            },
+            "city": "fort wayne",
+            "street": "oak lawn ave",
+            "number": 526,
+            "zipcode": "10256-4532"
+        },
+        "id": 10,
+        "email": "jimmie@gmail.com",
+        "username": "jimmie_k",
+        "password": "klein*#%*",
+        "name": {
+            "firstname": "jimmie",
+            "lastname": "klein"
+        },
+        "phone": "1-104-001-4567",
+        "__v": 0
+    }
+]
+2023-08-14 11:24:32,873 :INFO : <module> : Fetching user data from the API...
+2023-08-14 11:24:33,707 :INFO : <module> : API response received successfully.
+2023-08-14 11:24:33,708 :INFO : <module> : [
+    {
+        "address": {
+            "geolocation": {
+                "lat": "-37.3159",
+                "long": "81.1496"
+            },
+            "city": "kilcoole",
+            "street": "new road",
+            "number": 7682,
+            "zipcode": "12926-3874"
+        },
+        "id": 1,
+        "email": "john@gmail.com",
+        "username": "johnd",
+        "password": "m38rmF$",
+        "name": {
+            "firstname": "john",
+            "lastname": "doe"
+        },
+        "phone": "1-570-236-7033",
+        "__v": 0
+    },
+    {
+        "address": {
+            "geolocation": {
+                "lat": "-37.3159",
+                "long": "81.1496"
+            },
+            "city": "kilcoole",
+            "street": "Lovers Ln",
+            "number": 7267,
+            "zipcode": "12926-3874"
+        },
+        "id": 2,
+        "email": "morrison@gmail.com",
+        "username": "mor_2314",
+        "password": "83r5^_",
+        "name": {
+            "firstname": "david",
+            "lastname": "morrison"
+        },
+        "phone": "1-570-236-7033",
+        "__v": 0
+    },
+    {
+        "address": {
+            "geolocation": {
+                "lat": "40.3467",
+                "long": "-30.1310"
+            },
+            "city": "Cullman",
+            "street": "Frances Ct",
+            "number": 86,
+            "zipcode": "29567-1452"
+        },
+        "id": 3,
+        "email": "kevin@gmail.com",
+        "username": "kevinryan",
+        "password": "kev02937@",
+        "name": {
+            "firstname": "kevin",
+            "lastname": "ryan"
+        },
+        "phone": "1-567-094-1345",
+        "__v": 0
+    },
+    {
+        "address": {
+            "geolocation": {
+                "lat": "50.3467",
+                "long": "-20.1310"
+            },
+            "city": "San Antonio",
+            "street": "Hunters Creek Dr",
+            "number": 6454,
+            "zipcode": "98234-1734"
+        },
+        "id": 4,
+        "email": "don@gmail.com",
+        "username": "donero",
+        "password": "ewedon",
+        "name": {
+            "firstname": "don",
+            "lastname": "romer"
+        },
+        "phone": "1-765-789-6734",
+        "__v": 0
+    },
+    {
+        "address": {
+            "geolocation": {
+                "lat": "40.3467",
+                "long": "-40.1310"
+            },
+            "city": "san Antonio",
+            "street": "adams St",
+            "number": 245,
+            "zipcode": "80796-1234"
+        },
+        "id": 5,
+        "email": "derek@gmail.com",
+        "username": "derek",
+        "password": "jklg*_56",
+        "name": {
+            "firstname": "derek",
+            "lastname": "powell"
+        },
+        "phone": "1-956-001-1945",
+        "__v": 0
+    },
+    {
+        "address": {
+            "geolocation": {
+                "lat": "20.1677",
+                "long": "-10.6789"
+            },
+            "city": "el paso",
+            "street": "prospect st",
+            "number": 124,
+            "zipcode": "12346-0456"
+        },
+        "id": 6,
+        "email": "david_r@gmail.com",
+        "username": "david_r",
+        "password": "3478*#54",
+        "name": {
+            "firstname": "david",
+            "lastname": "russell"
+        },
+        "phone": "1-678-345-9856",
+        "__v": 0
+    },
+    {
+        "address": {
+            "geolocation": {
+                "lat": "10.3456",
+                "long": "20.6419"
+            },
+            "city": "fresno",
+            "street": "saddle st",
+            "number": 1342,
+            "zipcode": "96378-0245"
+        },
+        "id": 7,
+        "email": "miriam@gmail.com",
+        "username": "snyder",
+        "password": "f238&@*$",
+        "name": {
+            "firstname": "miriam",
+            "lastname": "snyder"
+        },
+        "phone": "1-123-943-0563",
+        "__v": 0
+    },
+    {
+        "address": {
+            "geolocation": {
+                "lat": "50.3456",
+                "long": "10.6419"
+            },
+            "city": "mesa",
+            "street": "vally view ln",
+            "number": 1342,
+            "zipcode": "96378-0245"
+        },
+        "id": 8,
+        "email": "william@gmail.com",
+        "username": "hopkins",
+        "password": "William56$hj",
+        "name": {
+            "firstname": "william",
+            "lastname": "hopkins"
+        },
+        "phone": "1-478-001-0890",
+        "__v": 0
+    },
+    {
+        "address": {
+            "geolocation": {
+                "lat": "40.12456",
+                "long": "20.5419"
+            },
+            "city": "miami",
+            "street": "avondale ave",
+            "number": 345,
+            "zipcode": "96378-0245"
+        },
+        "id": 9,
+        "email": "kate@gmail.com",
+        "username": "kate_h",
+        "password": "kfejk@*_",
+        "name": {
+            "firstname": "kate",
+            "lastname": "hale"
+        },
+        "phone": "1-678-456-1934",
+        "__v": 0
+    },
+    {
+        "address": {
+            "geolocation": {
+                "lat": "30.24788",
+                "long": "-20.545419"
+            },
+            "city": "fort wayne",
+            "street": "oak lawn ave",
+            "number": 526,
+            "zipcode": "10256-4532"
+        },
+        "id": 10,
+        "email": "jimmie@gmail.com",
+        "username": "jimmie_k",
+        "password": "klein*#%*",
+        "name": {
+            "firstname": "jimmie",
+            "lastname": "klein"
+        },
+        "phone": "1-104-001-4567",
+        "__v": 0
+    }
+]
+2023-08-14 11:24:33,708 :INFO : <module> : [{'address': {'geolocation': {'lat': '-37.3159', 'long': '81.1496'}, 'city': 'kilcoole', 'street': 'new road', 'number': 7682, 'zipcode': '12926-3874'}, 'id': 1, 'email': 'john@gmail.com', 'username': 'johnd', 'password': 'm38rmF$', 'name': {'firstname': 'john', 'lastname': 'doe'}, 'phone': '1-570-236-7033', '__v': 0}, {'address': {'geolocation': {'lat': '-37.3159', 'long': '81.1496'}, 'city': 'kilcoole', 'street': 'Lovers Ln', 'number': 7267, 'zipcode': '12926-3874'}, 'id': 2, 'email': 'morrison@gmail.com', 'username': 'mor_2314', 'password': '83r5^_', 'name': {'firstname': 'david', 'lastname': 'morrison'}, 'phone': '1-570-236-7033', '__v': 0}, {'address': {'geolocation': {'lat': '40.3467', 'long': '-30.1310'}, 'city': 'Cullman', 'street': 'Frances Ct', 'number': 86, 'zipcode': '29567-1452'}, 'id': 3, 'email': 'kevin@gmail.com', 'username': 'kevinryan', 'password': 'kev02937@', 'name': {'firstname': 'kevin', 'lastname': 'ryan'}, 'phone': '1-567-094-1345', '__v': 0}, {'address': {'geolocation': {'lat': '50.3467', 'long': '-20.1310'}, 'city': 'San Antonio', 'street': 'Hunters Creek Dr', 'number': 6454, 'zipcode': '98234-1734'}, 'id': 4, 'email': 'don@gmail.com', 'username': 'donero', 'password': 'ewedon', 'name': {'firstname': 'don', 'lastname': 'romer'}, 'phone': '1-765-789-6734', '__v': 0}, {'address': {'geolocation': {'lat': '40.3467', 'long': '-40.1310'}, 'city': 'san Antonio', 'street': 'adams St', 'number': 245, 'zipcode': '80796-1234'}, 'id': 5, 'email': 'derek@gmail.com', 'username': 'derek', 'password': 'jklg*_56', 'name': {'firstname': 'derek', 'lastname': 'powell'}, 'phone': '1-956-001-1945', '__v': 0}, {'address': {'geolocation': {'lat': '20.1677', 'long': '-10.6789'}, 'city': 'el paso', 'street': 'prospect st', 'number': 124, 'zipcode': '12346-0456'}, 'id': 6, 'email': 'david_r@gmail.com', 'username': 'david_r', 'password': '3478*#54', 'name': {'firstname': 'david', 'lastname': 'russell'}, 'phone': '1-678-345-9856', '__v': 0}, {'address': {'geolocation': {'lat': '10.3456', 'long': '20.6419'}, 'city': 'fresno', 'street': 'saddle st', 'number': 1342, 'zipcode': '96378-0245'}, 'id': 7, 'email': 'miriam@gmail.com', 'username': 'snyder', 'password': 'f238&@*$', 'name': {'firstname': 'miriam', 'lastname': 'snyder'}, 'phone': '1-123-943-0563', '__v': 0}, {'address': {'geolocation': {'lat': '50.3456', 'long': '10.6419'}, 'city': 'mesa', 'street': 'vally view ln', 'number': 1342, 'zipcode': '96378-0245'}, 'id': 8, 'email': 'william@gmail.com', 'username': 'hopkins', 'password': 'William56$hj', 'name': {'firstname': 'william', 'lastname': 'hopkins'}, 'phone': '1-478-001-0890', '__v': 0}, {'address': {'geolocation': {'lat': '40.12456', 'long': '20.5419'}, 'city': 'miami', 'street': 'avondale ave', 'number': 345, 'zipcode': '96378-0245'}, 'id': 9, 'email': 'kate@gmail.com', 'username': 'kate_h', 'password': 'kfejk@*_', 'name': {'firstname': 'kate', 'lastname': 'hale'}, 'phone': '1-678-456-1934', '__v': 0}, {'address': {'geolocation': {'lat': '30.24788', 'long': '-20.545419'}, 'city': 'fort wayne', 'street': 'oak lawn ave', 'number': 526, 'zipcode': '10256-4532'}, 'id': 10, 'email': 'jimmie@gmail.com', 'username': 'jimmie_k', 'password': 'klein*#%*', 'name': {'firstname': 'jimmie', 'lastname': 'klein'}, 'phone': '1-104-001-4567', '__v': 0}]
+2023-08-14 11:26:00,849 :INFO : <module> : Fetching user data from the API...
+2023-08-14 11:26:01,619 :INFO : <module> : API response received successfully.
+2023-08-14 11:26:01,621 :INFO : <module> : Verifying password format for: m38rmF$
+2023-08-14 11:26:01,622 :INFO : <module> : Verifying password format for: 83r5^_
+2023-08-14 11:26:01,622 :INFO : <module> : Verifying password format for: kev02937@
+2023-08-14 11:26:01,622 :INFO : <module> : Verifying password format for: ewedon
+2023-08-14 11:26:01,622 :ERROR : <module> : Invalid Format Password : ewedon
+2023-08-14 11:34:35,233 :INFO : <module> : Fetching user data from the API...
+2023-08-14 11:34:36,494 :INFO : <module> : API response received successfully.
+2023-08-14 11:34:36,496 :INFO : <module> : Verifying password format for: m38rmF$
+2023-08-14 11:34:36,496 :INFO : <module> : Verifying password format for: 83r5^_
+2023-08-14 11:34:36,496 :INFO : <module> : Verifying password format for: kev02937@
+2023-08-14 11:34:36,496 :INFO : <module> : Verifying password format for: ewedon
+2023-08-14 11:34:36,496 :ERROR : <module> : Invalid Format Password : ewedon
+2023-08-14 11:36:47,919 :INFO : <module> : Fetching data from the API...
+2023-08-14 11:36:49,585 :INFO : <module> : API response received successfully.
+2023-08-14 11:36:49,586 :DEBUG : <module> : Formatted JSON response:
+[
+    {
+        "id": 1,
+        "userId": 1,
+        "date": "2020-03-02T00:00:00.000Z",
+        "products": [
+            {
+                "productId": 1,
+                "quantity": 4
+            },
+            {
+                "productId": 2,
+                "quantity": 1
+            },
+            {
+                "productId": 3,
+                "quantity": 6
+            }
+        ],
+        "__v": 0
+    },
+    {
+        "id": 2,
+        "userId": 1,
+        "date": "2020-01-02T00:00:00.000Z",
+        "products": [
+            {
+                "productId": 2,
+                "quantity": 4
+            },
+            {
+                "productId": 1,
+                "quantity": 10
+            },
+            {
+                "productId": 5,
+                "quantity": 2
+            }
+        ],
+        "__v": 0
+    },
+    {
+        "id": 3,
+        "userId": 2,
+        "date": "2020-03-01T00:00:00.000Z",
+        "products": [
+            {
+                "productId": 1,
+                "quantity": 2
+            },
+            {
+                "productId": 9,
+                "quantity": 1
+            }
+        ],
+        "__v": 0
+    },
+    {
+        "id": 4,
+        "userId": 3,
+        "date": "2020-01-01T00:00:00.000Z",
+        "products": [
+            {
+                "productId": 1,
+                "quantity": 4
+            }
+        ],
+        "__v": 0
+    },
+    {
+        "id": 5,
+        "userId": 3,
+        "date": "2020-03-01T00:00:00.000Z",
+        "products": [
+            {
+                "productId": 7,
+                "quantity": 1
+            },
+            {
+                "productId": 8,
+                "quantity": 1
+            }
+        ],
+        "__v": 0
+    },
+    {
+        "id": 6,
+        "userId": 4,
+        "date": "2020-03-01T00:00:00.000Z",
+        "products": [
+            {
+                "productId": 10,
+                "quantity": 2
+            },
+            {
+                "productId": 12,
+                "quantity": 3
+            }
+        ],
+        "__v": 0
+    },
+    {
+        "id": 7,
+        "userId": 8,
+        "date": "2020-03-01T00:00:00.000Z",
+        "products": [
+            {
+                "productId": 18,
+                "quantity": 1
+            }
+        ],
+        "__v": 0
+    }
+]
+2023-08-14 11:36:49,587 :INFO : <module> : Validating response schema...
+2023-08-14 11:36:49,595 :ERROR : <module> : Response schema validation failed: '[\n    {\n        "id": 1,\n        "userId": 1,\n        "date": "2020-03-02T00:00:00.000Z",\n        "products": [\n            {\n                "productId": 1,\n                "quantity": 4\n            },\n            {\n                "productId": 2,\n                "quantity": 1\n            },\n            {\n                "productId": 3,\n                "quantity": 6\n            }\n        ],\n        "__v": 0\n    },\n    {\n        "id": 2,\n        "userId": 1,\n        "date": "2020-01-02T00:00:00.000Z",\n        "products": [\n            {\n                "productId": 2,\n                "quantity": 4\n            },\n            {\n                "productId": 1,\n                "quantity": 10\n            },\n            {\n                "productId": 5,\n                "quantity": 2\n            }\n        ],\n        "__v": 0\n    },\n    {\n        "id": 3,\n        "userId": 2,\n        "date": "2020-03-01T00:00:00.000Z",\n        "products": [\n            {\n                "productId": 1,\n                "quantity": 2\n            },\n            {\n                "productId": 9,\n                "quantity": 1\n            }\n        ],\n        "__v": 0\n    },\n    {\n        "id": 4,\n        "userId": 3,\n        "date": "2020-01-01T00:00:00.000Z",\n        "products": [\n            {\n                "productId": 1,\n                "quantity": 4\n            }\n        ],\n        "__v": 0\n    },\n    {\n        "id": 5,\n        "userId": 3,\n        "date": "2020-03-01T00:00:00.000Z",\n        "products": [\n            {\n                "productId": 7,\n                "quantity": 1\n            },\n            {\n                "productId": 8,\n                "quantity": 1\n            }\n        ],\n        "__v": 0\n    },\n    {\n        "id": 6,\n        "userId": 4,\n        "date": "2020-03-01T00:00:00.000Z",\n        "products": [\n            {\n                "productId": 10,\n                "quantity": 2\n            },\n            {\n                "productId": 12,\n                "quantity": 3\n            }\n        ],\n        "__v": 0\n    },\n    {\n        "id": 7,\n        "userId": 8,\n        "date": "2020-03-01T00:00:00.000Z",\n        "products": [\n            {\n                "productId": 18,\n                "quantity": 1\n            }\n        ],\n        "__v": 0\n    }\n]' is not of type 'array'
+
+Failed validating 'type' in schema:
+    {'items': {'properties': {'__v': {'type': 'integer'},
+                              'date': {'format': 'date-time',
+                                       'type': 'string'},
+                              'id': {'type': 'integer'},
+                              'products': {'items': {'properties': {'productId': {'type': 'integer'},
+                                                                    'quantity': {'type': 'integer'}},
+                                                     'required': ['productId',
+                                                                  'quantity'],
+                                                     'type': 'object'},
+                                           'type': 'array'},
+                              'userId': {'type': 'integer'}},
+               'required': ['id', 'userId', 'date', 'products', '__v'],
+               'type': 'object'},
+     'type': 'array'}
+
+On instance:
+    ('[\n'
+     '    {\n'
+     '        "id": 1,\n'
+     '        "userId": 1,\n'
+     '        "date": "2020-03-02T00:00:00.000Z",\n'
+     '        "products": [\n'
+     '            {\n'
+     '                "productId": 1,\n'
+     '                "quantity": 4\n'
+     '            },\n'
+     '            {\n'
+     '                "productId": 2,\n'
+     '                "quantity": 1\n'
+     '            },\n'
+     '            {\n'
+     '                "productId": 3,\n'
+     '                "quantity": 6\n'
+     '            }\n'
+     '        ],\n'
+     '        "__v": 0\n'
+     '    },\n'
+     '    {\n'
+     '        "id": 2,\n'
+     '        "userId": 1,\n'
+     '        "date": "2020-01-02T00:00:00.000Z",\n'
+     '        "products": [\n'
+     '            {\n'
+     '                "productId": 2,\n'
+     '                "quantity": 4\n'
+     '            },\n'
+     '            {\n'
+     '                "productId": 1,\n'
+     '                "quantity": 10\n'
+     '            },\n'
+     '            {\n'
+     '                "productId": 5,\n'
+     '                "quantity": 2\n'
+     '            }\n'
+     '        ],\n'
+     '        "__v": 0\n'
+     '    },\n'
+     '    {\n'
+     '        "id": 3,\n'
+     '        "userId": 2,\n'
+     '        "date": "2020-03-01T00:00:00.000Z",\n'
+     '        "products": [\n'
+     '            {\n'
+     '                "productId": 1,\n'
+     '                "quantity": 2\n'
+     '            },\n'
+     '            {\n'
+     '                "productId": 9,\n'
+     '                "quantity": 1\n'
+     '            }\n'
+     '        ],\n'
+     '        "__v": 0\n'
+     '    },\n'
+     '    {\n'
+     '        "id": 4,\n'
+     '        "userId": 3,\n'
+     '        "date": "2020-01-01T00:00:00.000Z",\n'
+     '        "products": [\n'
+     '            {\n'
+     '                "productId": 1,\n'
+     '                "quantity": 4\n'
+     '            }\n'
+     '        ],\n'
+     '        "__v": 0\n'
+     '    },\n'
+     '    {\n'
+     '        "id": 5,\n'
+     '        "userId": 3,\n'
+     '        "date": "2020-03-01T00:00:00.000Z",\n'
+     '        "products": [\n'
+     '            {\n'
+     '                "productId": 7,\n'
+     '                "quantity": 1\n'
+     '            },\n'
+     '            {\n'
+     '                "productId": 8,\n'
+     '                "quantity": 1\n'
+     '            }\n'
+     '        ],\n'
+     '        "__v": 0\n'
+     '    },\n'
+     '    {\n'
+     '        "id": 6,\n'
+     '        "userId": 4,\n'
+     '        "date": "2020-03-01T00:00:00.000Z",\n'
+     '        "products": [\n'
+     '            {\n'
+     '                "productId": 10,\n'
+     '                "quantity": 2\n'
+     '            },\n'
+     '            {\n'
+     '                "productId": 12,\n'
+     '                "quantity": 3\n'
+     '            }\n'
+     '        ],\n'
+     '        "__v": 0\n'
+     '    },\n'
+     '    {\n'
+     '        "id": 7,\n'
+     '        "userId": 8,\n'
+     '        "date": "2020-03-01T00:00:00.000Z",\n'
+     '        "products": [\n'
+     '            {\n'
+     '                "productId": 18,\n'
+     '                "quantity": 1\n'
+     '            }\n'
+     '        ],\n'
+     '        "__v": 0\n'
+     '    }\n'
+     ']')
+2023-08-14 11:39:56,281 :INFO : <module> : Fetching data from the API...
+2023-08-14 11:39:56,921 :INFO : <module> : API response received successfully.
+2023-08-14 11:39:56,921 :DEBUG : <module> : Validating product: productId=1, quantity=4
+2023-08-14 11:39:56,921 :DEBUG : <module> : Validating product: productId=2, quantity=1
+2023-08-14 11:39:56,921 :DEBUG : <module> : Validating product: productId=3, quantity=6
+2023-08-14 11:39:56,921 :DEBUG : <module> : Validating product: productId=2, quantity=4
+2023-08-14 11:39:56,921 :DEBUG : <module> : Validating product: productId=1, quantity=10
+2023-08-14 11:39:56,922 :DEBUG : <module> : Validating product: productId=5, quantity=2
+2023-08-14 11:39:56,922 :DEBUG : <module> : Validating product: productId=1, quantity=2
+2023-08-14 11:39:56,922 :DEBUG : <module> : Validating product: productId=9, quantity=1
+2023-08-14 11:39:56,922 :DEBUG : <module> : Validating product: productId=1, quantity=4
+2023-08-14 11:39:56,922 :DEBUG : <module> : Validating product: productId=7, quantity=1
+2023-08-14 11:39:56,922 :DEBUG : <module> : Validating product: productId=8, quantity=1
+2023-08-14 11:39:56,922 :DEBUG : <module> : Validating product: productId=10, quantity=2
+2023-08-14 11:39:56,922 :DEBUG : <module> : Validating product: productId=12, quantity=3
+2023-08-14 11:39:56,922 :DEBUG : <module> : Validating product: productId=18, quantity=1

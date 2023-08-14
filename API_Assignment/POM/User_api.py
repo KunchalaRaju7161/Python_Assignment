@@ -30,10 +30,13 @@ def verify_response_notnull():
     logging.info("API response received successfully.")
     response_json = response.json()
     json_final_response = json.dumps(response_json, indent=4)
+    logging.info(json_final_response)
     dict_response = json.loads(json_final_response)
+    logging.info(dict_response)
     for each_address_index in range(0, len(dict_response)):
         assert dict_response[each_address_index]['address']['geolocation'][
                    'lat'] != None, "latitud value for address " + str(each_address_index + 1) + " has None Value"
+
         assert dict_response[each_address_index]['address']['geolocation'][
                    'long'] != None, "long value for address " + str(each_address_index + 1) + " has None Value"
 
